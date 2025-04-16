@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stablecoin Analysis Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Stablecoin Analysis Project</h1>
+    <div class="section">
+        <h2>About This Project</h2>
+        <p>
+            This project analyzes the stability of four stablecoins (USDT, USDC, DAI, and TUSD) from April 14, 2024, to April 14, 2025. I used R for data cleaning and statistical analysis, SQLite for SQL queries, and Tableau Public for visualizations. Below, you’ll find links to the visualizations, code, and data files.
+        </p>
+    </div>
+    <div class="section">
+        <h2>Visualizations</h2>
+        <p>
+            Check out the visualizations of the stablecoin data on Tableau Public:<br>
+            <a href="https://public.tableau.com/app/profile/alexander.gallagher/viz/StablecoinAnalysisVisualizations/Dashboard1"_blank">Stablecoin Analysis Visualizations</a>
+        </p>
+        <p>
+            Note: Replace <code>TABLEAU_PUBLIC_URL</code> with the actual URL of your Tableau Public workbook.
+        </p>
+    </div>
+    <div class="section">
+        <h2>Files and Code</h2>
+        <ul>
+            <li><a href="stablecoin_data_cleaned.csv" download>Cleaned Data (stablecoin_data_cleaned.csv)</a></li>
+            <li><a href="stablecoin_data_cleaning.R" download>Data Cleaning Script (stablecoin_data_cleaning.R)</a></li>
+            <li><a href="sql_queries.sql" download>SQL Queries (sql_queries.sql)</a></li>
+            <li><a href="stablecoin_analysis.R" download>Statistical Analysis Script (stablecoin_analysis.R)</a></li>
+            <li><a href="summary_stats.csv" download>Summary Statistics (summary_stats.csv)</a></li>
+            <li><a href="volatility.csv" download>Volatility Results (volatility.csv)</a></li>
+            <li><a href="t_test_results.csv" download>T-Test Results (t_test_results.csv)</a></li>
+        </ul>
+    </div>
+    <div class="section">
+        <h2>Findings</h2>
+        <p>
+            Here are some key findings from the analysis:
+        </p>
+        <ul>
+            <li>USDC and DAI appeared to have almost no price variation (min/max price of 1.0000), possibly due to data rounding or cleaning.</li>
+            <li>USDT was stable with small fluctuations (min price of 0.9980, max of 1.0000).</li>
+            <li>TUSD showed significant deviations (min price of 0.9920, max of 1.0300), suggesting potential instability on certain days.</li>
+        </ul>
+    </div>
+</body>
+</html>

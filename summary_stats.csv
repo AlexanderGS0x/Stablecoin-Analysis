@@ -1,0 +1,5 @@
+"Coin","Mean_Price","Median_Price","SD_Price","Min_Price","Max_Price","Mean_Deviation","Mean_Abs_Deviation","SD_Deviation","Min_Deviation","Max_Deviation"
+"DAI",1,1,1e-04,0.9996,1.0005,0,1e-04,1e-04,-4e-04,5e-04
+"TUSD",0.9992,0.9988,0.0032,0.9918,1.0269,-8e-04,0.0019,0.0032,-0.0082,0.0269
+"USDC",1,1,1e-04,0.9997,1.0005,0,1e-04,1e-04,-3e-04,5e-04
+"USDT",0.9999,0.9999,6e-04,0.9978,1.0022,-1e-04,4e-04,6e-04,-0.0022,0.0022

@@ -1,0 +1,17 @@
+-- Query 1: Which stablecoin is the most stable? (Smallest average absolute deviation)
+SELECT Coin, AVG(ABS(Deviation)) AS Avg_Abs_Deviation
+FROM stablecoin_data
+GROUP BY Coin
+ORDER BY Avg_Abs_Deviation ASC;
+
+-- Query 2: Total trading volume for each stablecoin
+SELECT Coin, SUM(Volume) AS Total_Volume
+FROM stablecoin_data
+GROUP BY Coin
+ORDER BY Total_Volume DESC;
+
+-- Query 3: Days with significant price deviations (> 0.5%)
+SELECT Date, Coin, Price, Deviation
+FROM stablecoin_data
+WHERE ABS(Deviation) > 0.005
+ORDER BY ABS(Deviation) DESC;
